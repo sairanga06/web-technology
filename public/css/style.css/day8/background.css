@@ -1,0 +1,35 @@
+body {
+    background-color: #9c6e3d;
+
+    background-image: url("https://storage.ghost.io/c/0b/fe/0bfe68cc-edd8-4e44-a0ad-aae06d20ec98/content/images/size/w1200/2021/12/Jitter-Pink-perfect-loop-cubes.gif");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    height: 100vh;
+    margin: 0;
+}
+
+/* Heading */
+h1 {
+    color: #392802;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 20vh;
+}
+
+/* Paragraph */
+p {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    color: #392802;
+}
+
+/* Main content */
+#fantastic-fox {
+    padding: 20px;
+}

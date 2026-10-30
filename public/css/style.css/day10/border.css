@@ -1,0 +1,40 @@
+p{
+    font-size: 40px;
+    border: 2px solid #000;
+}
+h1{
+    font-size: 30px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #b62121;
+}
+#solid{
+    border-style: solid;
+    font-size: 40px;
+    border-width: 5px;
+    border-color: #11b0c5;
+
+}
+#double{
+    border-style: double;
+    border-width: 5px;
+    border-color: #790707;
+    font-size: 40px;
+}
+#dashed{
+    border-style: dashed;
+    border-width: 5px;
+    border-color: #c20db3;
+    font-size: 40px;
+}
+#dotted{
+    border-style: dotted;
+    border-width: 5px;
+    border-color: #1058c4eb;
+    font-size: 40px;
+}
+#groove{
+    border-style: groove;
+    border-width: 5px;
+    border-color: #c4c410;
+}

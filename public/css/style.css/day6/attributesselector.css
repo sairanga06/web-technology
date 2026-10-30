@@ -1,0 +1,20 @@
+[href]{
+    font-size:50px;
+    color:red;
+}
+[target]{
+    color:blue;
+    background-color:yellow;
+    font-family:cursive;
+}
+[placeholder]{
+    color:green;
+    font-size:30px;
+    font-family:cursive;
+}
+[type="text"]{
+    background-color:blue;
+    font-size:50px;
+    border-radius:20px;
+    padding:10px;
+}

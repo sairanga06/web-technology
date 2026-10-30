@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy - Food Delivery</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="../../css/style.css/day16/swiggy.css">
+</head>
+
+<body>
+    
+
+    <!-- ================= HEADER ================= -->
+    <header class="navbar">
+
+        <a href="https://www.swiggy.com/" class="logo">
+            <img
+                src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/static-assets/images/swiggy_logo_white.png"
+                alt="Swiggy Logo"
+            >
+        </a>
+
+        <nav class="nav-links">
+            <a href="https://www.swiggy.com/corporate/" target="_blank" rel="noopener noreferrer">
+                Swiggy Corporate
+            </a>
+
+            <a href="https://partner.swiggy.com/login#/swiggy" target="_blank" rel="noopener noreferrer">
+                Partner with us
+            </a>
+
+            <a href="https://www.swiggy.com/" target="_blank" rel="noopener noreferrer" class="app-link">
+                Get the App <span class="arrow">↗</span>
+            </a>
+
+            <a href="https://www.swiggy.com/" class="sign-in">
+                Sign in
+            </a>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero">
+
+        <img
+            class="food-image left-image"
+            src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Veggies_new.png"
+            alt="Fresh vegetables and food"
+        >
+
+        <div class="hero-content">
+
+            <!-- Location Input -->
+            <div class="location-box">
+
+                <svg class="location-icon"
+                     xmlns="http://www.w3.org/2000/svg"
+                     width="24"
+                     height="24"
+                     viewBox="0 0 18 23"
+                     fill="none"
+                     aria-hidden="true">
+
+                    <path
+                        d="M9 1C4.6 1 1 4.6 1 9C1 14 9 22 9 22S17 14 17 9C17 4.6 13.4 1 9 1Z"
+                        stroke="#FF5200"
+                        stroke-width="2"
+                        fill="none"
+                    />
+
+                    <circle
+                        cx="9"
+                        cy="9"
+                        r="3"
+                        stroke="#FF5200"
+                        stroke-width="2"
+                    />
+
+                </svg>
+
+                <input
+                    type="text"
+                    id="location"
+                    name="location"
+                    placeholder="Enter your delivery location"
+                    maxlength="30"
+                    autocomplete="off"
+                >
+
+                <span class="dropdown-arrow" aria-hidden="true">⌄</span>
+
+            </div>
+
+
+            <!-- Restaurant Search -->
+            <div class="search-box">
+
+                <span class="search-placeholder">
+                    Search for restaurant, item or more
+                </span>
+
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    aria-hidden="true">
+
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <path d="m16 16 5 5"></path>
+
+                </svg>
+
+            </div>
+
+
+            <!-- Hero Heading -->
+            <h1>
+                Order food &amp; groceries.<br>
+                Discover best restaurants.<br>
+                Swiggy it!
+            </h1>
+
+        </div>
+
+        <img
+            class="food-image right-image"
+            src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Sushi_replace.png"
+            alt="Delicious food"
+        >
+
+    </section>
+
+
+    <!-- ================= CATEGORY TILES ================= -->
+    <section class="category-section">
+
+        <div class="category-container">
+
+            <!-- Food -->
+            <a
+                href="https://www.swiggy.com/restaurants"
+                class="category-card"
+                title="Food">
+
+                <img
+                    src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/23/ec86a309-9b06-48e2-9adc-35753f06bc0a_Food3BU.png"
+                    alt="Food"
+                >
+            </a>
+
+
+            <!-- Instamart -->
+            <a
+                href="https://www.swiggy.com/instamart?entryId=1234&entryName=mainTileEntry4&v=1"
+                class="category-card"
+                title="Instamart">
+
+                <img
+                    src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/23/b5c57bbf-df54-4dad-95d1-62e3a7a8424d_IM3BU.png"
+                    alt="Instamart"
+                >
+            </a>
+
+
+            <!-- Dineout -->
+            <a
+                href="https://www.swiggy.com/dineout"
+                class="category-card"
+                title="Dineout">
+
+                <img
+                    src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/23/b6d9b7ab-91c7-4f72-9bf2-fcd4ceec3537_DO3BU.png"
+                    alt="Dineout"
+                >
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BEST FOOD OPTIONS ================= -->
+    <section class="best-food-section">
+
+        <h2 class="section-title">Order our best food options</h2>
+
+        <div class="food-grid">
+
+            <!-- Row 1 -->
+            <a href="https://www.swiggy.com/restaurants" class="food-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Biryani.png" alt="Biryani" loading="lazy">
+            </a>
+
+            <a href="https://www.swiggy.com/restaurants" class="food-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/North%20Indian.png" alt="North Indian" loading="lazy">
+            </a>
+
+            <a href="https://www.swiggy.com/restaurants" class="food-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/South%20Indian.png" alt="South Indian" loading="lazy">
+            </a>
+
+            <a href="https://www.swiggy.com/restaurants" class="food-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Cake.png" alt="Cake" loading="lazy">
+            </a>
+
+            <a href="https://www.swiggy.com/restaurants" class="food-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Burger.png" alt="Burger" loading="lazy">
+            </a>
+
+            <a href="https://www.swiggy.com/restaurants" class="food-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Desserts.png" alt="Desserts" loading="lazy">
+            </a>
+
+            <a href="https://www.swiggy.com/restaurants" class="food-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Pizza.png" alt="Pizza" loading="lazy">
+            </a>
+
+            <a href="https://www.swiggy.com/restaurants" class="food-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Dosa.png" alt="Dosa" loading="lazy">
+            </a>
+
+            <a href="https://www.swiggy.com/restaurants" class="food-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Chinese.png" alt="Chinese" loading="lazy">
+            </a>
+
+            <a href="https://www.swiggy.com/restaurants" class="food-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Ice%20Cream.png" alt="Ice Cream" loading="lazy">
+            </a>
+
+
+            <!-- Row 2 -->
+            <a href="https://www.swiggy.com/restaurants" class="food-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Idli.png" alt="Idli" loading="lazy">
+            </a>
+
+            <a href="https://www.swiggy.com/restaurants" class="food-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Rolls.png" alt="Rolls" loading="lazy">
+            </a>
+
+            <a href="https://www.swiggy.com/restaurants" class="food-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Shawarma.png" alt="Shawarma" loading="lazy">
+            </a>
+
+            <a href="https://www.swiggy.com/restaurants" class="food-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Salad.png" alt="Salad" loading="lazy">
+            </a>
+
+            <a href="https://www.swiggy.com/restaurants" class="food-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Noodles.png" alt="Noodles" loading="lazy">
+            </a>
+
+            <a href="https://www.swiggy.com/restaurants" class="food-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Tea.png" alt="Tea" loading="lazy">
+            </a>
+
+            <a href="https://www.swiggy.com/restaurants" class="food-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Coffee.png" alt="Coffee" loading="lazy">
+            </a>
+
+            <a href="https://www.swiggy.com/restaurants" class="food-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Pasta.png" alt="Pasta" loading="lazy">
+            </a>
+
+            <a href="https://www.swiggy.com/restaurants" class="food-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Vada.png" alt="Vada" loading="lazy">
+            </a>
+
+            <a href="https://www.swiggy.com/restaurants" class="food-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Paratha.png" alt="Paratha" loading="lazy">
+            </a>
+
+        </div>
+
+    </section>
+    
+
+</body>
+</html>

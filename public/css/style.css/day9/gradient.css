@@ -1,0 +1,23 @@
+#radial{
+    
+    height: 100vh;
+    background-image: radial-gradient( #ff0000, #0000ff, #00ff00);
+    background-image: radial-gradient(circle, #ff0000, #0000ff, #00ff00);
+    background-image: radial-gradient(circle at 50% 50%, #ff0000, #0000ff, #00ff00);
+    background-image: radial-gradient(farthest-corner, #ff0000, #0000ff, #00ff00);
+}
+#repeating-radial{
+    background-image: repeating-radial-gradient(#ff0000, #0000ff, #00ff00);
+}
+#web{
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    padding: 250px;
+}
+#css{
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    
+}

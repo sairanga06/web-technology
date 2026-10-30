@@ -1,0 +1,29 @@
+div{
+    width: 30%;
+    height: 250px;
+    font-size: 40px;
+    background-color: aquamarine;
+    border: 5pc solid;
+    display: inline-block;
+}
+span{
+    width: 30%;
+    height:200px;
+    font-size: 40px;
+    background-color: aquamarine;
+    border: 5cap solid;
+    display: inline-block;
+    display: inline;
+    display: block;
+    display: none;
+}
+h1{
+    width: 30%;
+    height: 150px;
+    font-size: 40px;
+    background-color: rgb(188, 11, 11);
+    border: 5px solid;
+    display: inline-block;
+    display: inline-block;
+    
+}

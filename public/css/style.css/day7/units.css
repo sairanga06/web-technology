@@ -1,0 +1,28 @@
+
+body {
+    margin: 0;
+}
+
+.box {
+    width: 100vw;
+    height: 100vh;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 5vw;
+    color: darkblue;
+}
+
+p {
+    font-size: 2vw;
+}
+#vmin{
+    width: 50vmin;
+    height: 50vmin;
+    background-color: lightcoral;
+}

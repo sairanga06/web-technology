@@ -1,0 +1,801 @@
+
+/* =================================
+   GLOBAL STYLES
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1c1c1c;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.section {
+    padding: 100px 7%;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 55px;
+}
+
+.section-heading h2 {
+    color: #e23744;
+    font-size: clamp(32px, 4vw, 58px);
+    line-height: 1.15;
+    margin-bottom: 22px;
+}
+
+.section-heading p {
+    color: #696969;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* =================================
+   HERO SECTION
+================================= */
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background: #1c1c1c;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.12) 0%,
+        rgba(0, 0, 0, 0.35) 35%,
+        #1c1c1c 100%
+    );
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 50px 20px 35px;
+    animation: heroEnter 1s ease-out both;
+}
+
+.logo {
+    width: 190px;
+    margin: 0 auto 38px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 76px);
+    line-height: 1.12;
+    margin-bottom: 22px;
+}
+
+.hero-content > p {
+    color: #f4f4f4;
+    font-size: clamp(15px, 1.5vw, 21px);
+    line-height: 1.7;
+}
+
+.store-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+
+.store-buttons a,
+.download-content > a {
+    display: inline-block;
+    padding: 15px 27px;
+    background: #e23744;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.store-buttons a:hover,
+.download-content > a:hover {
+    background: #c91e31;
+    transform: translateY(-3px);
+}
+
+.store-buttons a:nth-child(2) {
+    background: white;
+    color: #e23744;
+}
+
+.scroll-link {
+    display: block;
+    color: white;
+    margin-top: 60px;
+    animation: bounce 1.5s infinite;
+}
+
+/* =================================
+   ABOUT AND STATISTICS
+================================= */
+
+.about {
+    position: relative;
+    background: white;
+    overflow: hidden;
+}
+
+.food-decoration {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background: #ffe8eb;
+    border-radius: 50%;
+    filter: blur(3px);
+    z-index: 0;
+}
+
+.food-left {
+    top: 15%;
+    left: -140px;
+}
+
+.about .section-heading,
+.stats {
+    position: relative;
+    z-index: 1;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.stat-card {
+    padding: 35px 20px;
+    border: 1px solid #ffe0e4;
+    border-radius: 20px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 8px 30px rgba(28, 28, 28, 0.07);
+    transition: transform 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+}
+
+.stat-card h3 {
+    color: #343434;
+    font-size: clamp(24px, 3vw, 38px);
+    margin-bottom: 12px;
+}
+
+.stat-card p {
+    color: #777;
+}
+
+/* =================================
+   APP FEATURES
+================================= */
+
+.features {
+    background: linear-gradient(
+        180deg,
+        #ffe9ec 0%,
+        #ffffff 80%
+    );
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: white;
+    border: 1px solid #f0e4e5;
+    border-radius: 22px;
+    overflow: hidden;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.06);
+    transition: transform 0.35s, box-shadow 0.35s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.more-text {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* =================================
+   GOLD MEMBERSHIP
+================================= */
+
+.gold-section {
+    position: relative;
+    padding: 100px 7%;
+    background:
+        radial-gradient(
+            circle at top left,
+            #333 0%,
+            transparent 35%
+        ),
+        #080808;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.gold-logo {
+    width: 230px;
+    max-height: 100px;
+    object-fit: contain;
+    margin: 0 auto 25px;
+}
+
+.gold-subtitle {
+    color: #e9c789;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.gold-section > h2 {
+    letter-spacing: 5px;
+    font-size: 19px;
+    margin-bottom: 40px;
+    color: #e9c789;
+}
+
+.gold-benefits {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 340px));
+    justify-content: center;
+    gap: 30px;
+}
+
+.gold-card {
+    padding: 30px 25px;
+    border: 1px solid rgba(233, 199, 137, 0.35);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.035);
+    transition: transform 0.3s;
+}
+
+.gold-card:hover {
+    transform: translateY(-8px);
+}
+
+.gold-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 auto 20px;
+}
+
+.gold-card h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+    color: #fff0d0;
+}
+
+.gold-card p {
+    color: #e9c789;
+    line-height: 1.6;
+}
+
+/* =================================
+   ETERNAL BRANDS
+================================= */
+
+.brands {
+    background: white;
+}
+
+.brand-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.brand-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+    border: 2px solid #f2dfe2;
+    border-radius: 28px;
+    overflow: hidden;
+    color: #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.brand-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.brand-card img {
+    width: 125px;
+    height: 125px;
+    object-fit: contain;
+    border-radius: 25px;
+    margin-bottom: 22px;
+    position: relative;
+    z-index: 1;
+}
+
+.brand-card h3 {
+    font-size: 25px;
+    margin-bottom: 14px;
+    text-transform: lowercase;
+}
+
+.brand-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #696969;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.brand-card span {
+    color: #e23744;
+    font-weight: bold;
+}
+
+.zomato {
+    background: linear-gradient(#fff0f2, white);
+}
+
+.blinkit {
+    background: linear-gradient(#fff9e4, white);
+    border-color: #faecc0;
+}
+
+.district {
+    background: linear-gradient(#f2ecff, white);
+    border-color: #dfcfff;
+}
+
+.hyperpure {
+    background: linear-gradient(#fff0f2, white);
+}
+
+/* =================================
+   DOWNLOAD APP
+================================= */
+
+.download-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    margin: 40px auto 100px;
+    padding: 65px 8%;
+    width: 88%;
+    max-width: 1400px;
+    min-height: 380px;
+    border: 3px solid #ffe1e5;
+    border-radius: 40px;
+    background: linear-gradient(135deg, #fff 0%, #ffe8ec 100%);
+}
+
+.download-content {
+    max-width: 550px;
+}
+
+.download-content h2 {
+    font-size: clamp(30px, 4vw, 45px);
+    margin-bottom: 20px;
+}
+
+.download-content p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.download-art {
+    display: flex;
+    justify-content: center;
+}
+
+.phone {
+    position: relative;
+    width: 190px;
+    height: 280px;
+    border: 8px solid #292929;
+    border-radius: 28px;
+    background: white;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.16);
+    text-align: center;
+    padding: 45px 12px 15px;
+    animation: floatPhone 3s ease-in-out infinite;
+}
+
+.phone-camera {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 55px;
+    height: 8px;
+    border-radius: 10px;
+    background: #292929;
+}
+
+.phone-logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e23744;
+    margin-bottom: 25px;
+}
+
+.phone-food {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.phone p {
+    color: #555;
+    line-height: 1.5;
+    font-size: 13px;
+}
+
+/* =================================
+   FOOTER
+================================= */
+
+.footer {
+    background: #101010;
+    color: white;
+    padding: 55px 7% 25px;
+}
+
+.footer-top {
+    margin-bottom: 45px;
+}
+
+.footer-top img {
+    width: 150px;
+    margin-bottom: 25px;
+}
+
+.footer-top h2 {
+    font-size: 25px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 35px;
+    padding-bottom: 40px;
+}
+
+.footer-grid h3 {
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.footer-grid a {
+    display: block;
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 14px;
+    transition: color 0.2s;
+}
+
+.footer-grid a:hover {
+    color: white;
+}
+
+.copyright {
+    border-top: 1px solid #333;
+    padding-top: 25px;
+    color: #999;
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+.copyright small {
+    color: #777;
+}
+
+/* =================================
+   ANIMATIONS
+================================= */
+
+@keyframes heroEnter {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
+}
+
+@keyframes floatPhone {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+/* =================================
+   TABLET RESPONSIVENESS
+================================= */
+
+@media (max-width: 900px) {
+    .section {
+        padding: 75px 5%;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .brand-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .stats {
+        gap: 15px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .download-section {
+        padding: 45px 5%;
+    }
+}
+
+/* =================================
+   MOBILE RESPONSIVENESS
+================================= */
+
+@media (max-width: 600px) {
+    .hero {
+        min-height: 100svh;
+    }
+
+    .hero-video {
+        object-position: center;
+    }
+
+    .hero-content {
+        padding: 35px 15px;
+    }
+
+    .logo {
+        width: 150px;
+        margin-bottom: 30px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-content > p {
+        font-size: 15px;
+    }
+
+    .store-buttons {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 28px;
+    }
+
+    .store-buttons a {
+        width: min(280px, 90%);
+    }
+
+    .scroll-link {
+        margin-top: 35px;
+    }
+
+    .section {
+        padding: 65px 20px;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .section-heading p {
+        font-size: 15px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+    }
+
+    .stat-card {
+        padding: 25px 15px;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .feature-card {
+        padding: 12px;
+        border-radius: 17px;
+    }
+
+    .feature-card h3 {
+        font-size: 14px;
+    }
+
+    .gold-section {
+        padding: 70px 20px;
+    }
+
+    .gold-logo {
+        width: 190px;
+    }
+
+    .gold-subtitle {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .gold-benefits {
+        grid-template-columns: 1fr;
+        max-width: 340px;
+        margin: 0 auto;
+    }
+
+    .brand-grid {
+        grid-template-columns: 1fr;
+        max-width: 360px;
+    }
+
+    .brand-card {
+        padding: 25px;
+    }
+
+    .download-section {
+        flex-direction: column;
+        text-align: center;
+        width: calc(100% - 30px);
+        padding: 40px 20px;
+        margin: 25px auto 60px;
+        border-radius: 25px;
+    }
+
+    .download-content h2 {
+        font-size: 30px;
+    }
+
+    .download-content p {
+        font-size: 15px;
+    }
+
+    .download-art {
+        margin-top: 10px;
+    }
+
+    .footer {
+        padding: 40px 22px 20px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px 20px;
+    }
+
+    .footer-grid h3 {
+        font-size: 15px;
+    }
+
+    .footer-grid a {
+        font-size: 13px;
+        overflow-wrap: anywhere;
+    }
+}
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
